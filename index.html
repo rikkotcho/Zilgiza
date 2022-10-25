@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <img src="logo.jpg" width="90">
+  <div style="display:inline-block">
+    <h1>
+      <input type="text" placeholder="검색어 입력">
+      <button>검색</button>
+    </h1>
+    <h2 class="line">축제 일정</h2>
+    <dt class="no-scroll" style="overflow:scroll; width:580px; height:850px;">
+      <center><img src="무중력영화제.png" width="400" alt="무중력 영화제 그림"></center>
+      <p></p>
+      <a href='https://www.mcst.go.kr/kor/s_culture/festival/festivalView.jsp?pSeq=10847&pRo=6' style="text-decoration:none"target='_blank'>
+      <h3>무중력 영화제</h3>
+      </a>
+      <p><strong>서울특별시 청년 공간 무중력 지대 양천은 2018년부터 매년 무중력 영화제(MUFF)를 개최하고 있다.<strong></p>
+      <p>기간 : 9.16 (금) ~ 9.17(토)</p><br><br> 
+      <p></p>
+      <center><img src="청년의날.png" width="400" alt="청년의날 그림"></center>
+      <p></p>
+      <a href='http://www.2030fair.com/' style="text-decoration:none"target='_blank'>
+      <h3>청년의 날</h3>
+      </a>
+      <p><strong>제3회 2022년 청년의 날 기념식이 9월 17일(토) 10시 서울 광화문광장에서 한덕수 국무총리 주재로 개최되었다.</strong></p>
+      <p>기간 : 9.17 (금)</p><br><br>
+      <center><img src="김포평화누리길.jpg" width="400" alt="김포평화누리길"></center>
+      <p></p>
+      <a href='https://www.mcst.go.kr/kor/s_culture/festival/festivalView.jsp?pSeq=11156&pRo=1&pCurrentPage=1&pOrder=01up&pPeriod=&fromDt=&toDt=&pSido=&pSearchType=01&pSearchWord=' style="text-decoration:none"target='_blank'>
+      <h3>김포 평화누리길 걷기 행사</h3>
+      </a>
+      <p><strong>어느새 훌쩍 다가온 가을, 가을의 정취를 느끼며 천혜의 자연이 보존되어 있는 평화누리길을 걸을 수 있는 「2022 김포 평화누리길 걷기 행사」가 다시 대면 행사로 우리 곁에 돌아왔다.<strong></p>
+      <p>기간 : 10. 22(토)</p><br>
+    </dt>
+    <a href="#" onclick="javascript:window.scrollTo(0,0)">TOP</a>
+  </div>
+  <fieldset>
+    <nav id="topMenu">
+      <ul>
+        <li><a class="menuLink" href="#맛집">맛집</a></li>
+        <li><a class="menuLink" href="#카페">카페</a></li>
+        <li><a class="menuLink" href="#푸드트럭">푸드트럭</a></li>
+        <li><a class="menuLink" href="#축제">축제</a></li>
+        <li><a class="menuLink" href="#그외">...</a></li>
+      </ul>
+    </nav>
+    <dl id="map" style="width:500px;height:400px;"></dl>
+    <script type="text/javascript" src="//dapi.kakao.com/v2/maps/sdk.js?appkey=9932d61390c585cb1e9e272778181329"></script>
+    <script>
+      var container = document.getElementById('map');
+      var options = {
+        center: new kakao.maps.LatLng(33.450701, 126.570667),
+        level: 3
+      };
+  
+      var map = new kakao.maps.Map(container, options);
+    </script>
+  </fieldset>
+</body>
+</html>
