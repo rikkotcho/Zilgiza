@@ -4,16 +4,72 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
+  <title>Zlgiza</title>
   <link rel="stylesheet" href="style.css">
+  <ul class="menu" style="display:inline-block">
+    <img src="logo.jpg" width="90">
+    <li>
+      <a href="#"><center><img src="user.png" width="35" style="vertical-align: middle;"></center></a>
+      <ul class="submenu">
+        <li><a href="#">submenu01</a></li>
+        <li><a href="#">submenu02</a></li>
+        <li><a href="#">submenu03</a></li>
+        <li><a href="#">submenu04</a></li>
+        <li><a href="#">submenu05</a></li>
+      </ul>
+    </li>
+    <li>
+      <a><center><img src="map-marker.png" width="35" style="vertical-align: middle;"></center></a>
+      <ul class="submenu">
+        <li><a href="list.html">축제일정</a></li>
+        <li><a href="#">submenu02</a></li>
+        <li><a href="#">submenu03</a></li>
+        <li><a href="#">submenu04</a></li>
+        <li><a href="#">submenu05</a></li>
+      </ul>
+    </li>
+    <li>
+      <a href="#"><center><img src="bookmark.png" width="35" style="vertical-align: middle;"></center></a>
+      <ul class="submenu">
+        <li><a href="#">submenu01</a></li>
+        <li><a href="#">submenu02</a></li>
+        <li><a href="#">submenu03</a></li>
+        <li><a href="#">submenu04</a></li>
+        <li><a href="#">submenu05</a></li>
+      </ul>
+    </li>
+    <li>
+      <a href="#"><center><img src="heart.png" width="35" style="vertical-align: middle;"></center></a>
+      <ul class="submenu">
+        <li><a href="#">submenu01</a></li>
+        <li><a href="#">submenu02</a></li>
+        <li><a href="#">submenu03</a></li>
+        <li><a href="#">submenu04</a></li>
+        <li><a href="#">submenu05</a></li>
+      </ul>
+    </li>
+    <li>
+      <a href="#"><center><img src="exit.png" width="35" style="vertical-align: middle;"></center></a>
+      <ul class="submenu">
+        <li><a href="#">submenu01</a></li>
+        <li><a href="#">submenu02</a></li>
+        <li><a href="#">submenu03</a></li>
+        <li><a href="#">submenu04</a></li>
+        <li><a href="#">submenu05</a></li>
+      </ul>
+    </li>
+  </ul>
 </head>
 <body>
-  <img src="logo.jpg" width="90">
-  <div style="display:inline-block">
-    <h1>
-      <input type="text" placeholder="검색어 입력">
-      <button>검색</button>
-    </h1>
+  <dl style="display:inline-block">
+    <section>
+      <from action="http://www.google.com/search" method="GET">
+        <h1 class="search">
+          <input type="text" placeholder="검색어 입력">
+          <button>검색</button>
+        </h1>
+      </from>
+    </section>
     <h2 class="line">축제 일정</h2>
     <dt class="no-scroll" style="overflow:scroll; width:580px; height:850px;">
       <center><img src="무중력영화제.png" width="400" alt="무중력 영화제 그림"></center>
@@ -22,7 +78,7 @@
       <h3>무중력 영화제</h3>
       </a>
       <p><strong>서울특별시 청년 공간 무중력 지대 양천은 2018년부터 매년 무중력 영화제(MUFF)를 개최하고 있다.<strong></p>
-      <p>기간 : 9.16 (금) ~ 9.17(토)</p><br><br>
+      <p>기간 : 9.16 (금) ~ 9.17(토)</p><br><br> 
       <p></p>
       <center><img src="청년의날.png" width="400" alt="청년의날 그림"></center>
       <p></p>
@@ -36,32 +92,242 @@
       <a href='https://www.mcst.go.kr/kor/s_culture/festival/festivalView.jsp?pSeq=11156&pRo=1&pCurrentPage=1&pOrder=01up&pPeriod=&fromDt=&toDt=&pSido=&pSearchType=01&pSearchWord=' style="text-decoration:none"target='_blank'>
       <h3>김포 평화누리길 걷기 행사</h3>
       </a>
-      <p><strong>어느새 훌쩍 다가온 가을, 가을의 정취를 느끼며 천혜의 자연이 보존되어 있는 평화누리길을 걸을 수 있는 「2022 김포 평화누리길 걷기 행사」가 다시 대면 행사로 우리 곁에 돌아왔다.<strong></p>
+      <p><strong>어느새 훌쩍 다가온 가을, 가을의 정취를 느끼며 천혜의 자연이 보존되어 있는 평화누리길을 걸을 수 있다.<strong></p>
       <p>기간 : 10. 22(토)</p><br>
     </dt>
-    <a href="#" onclick="javascript:window.scrollTo(0,0)">TOP</a>
-  </div>
+  </dl>
   <fieldset>
-    <nav id="topMenu">
-      <ul>
-        <li><a class="menuLink" href="#맛집">맛집</a></li>
-        <li><a class="menuLink" href="#카페">카페</a></li>
-        <li><a class="menuLink" href="#푸드트럭">푸드트럭</a></li>
-        <li><a class="menuLink" href="#축제">축제</a></li>
-        <li><a class="menuLink" href="#그외">...</a></li>
-      </ul>
-    </nav>
-    <dl id="map" style="width:1100px;height:900px;"></dl>
-    <script type="text/javascript" src="//dapi.kakao.com/v2/maps/sdk.js?appkey=9932d61390c585cb1e9e272778181329"></script>
-    <script>
-      var container = document.getElementById('map');
-      var options = {
-        center: new kakao.maps.LatLng(33.450701, 126.570667),
-        level: 3
-      };
+    <div class="map_wrap">
+      <div id="map" style="width:100%;height:100%;position:relative;overflow:hidden;"></div> 
+      <!-- 지도타입 컨트롤 div 입니다 -->
+      <div class="custom_typecontrol radius_border">
+          <span id="btnRoadmap" class="selected_btn" onclick="setMapType('roadmap')">지도</span>
+          <span id="btnSkyview" class="btn" onclick="setMapType('skyview')">스카이뷰</span>
+      </div>
+      <!-- 지도 확대, 축소 컨트롤 div 입니다 -->
+      <div class="custom_zoomcontrol radius_border"> 
+          <span onclick="zoomIn()"><img src="https://t1.daumcdn.net/localimg/localimages/07/mapapidoc/ico_plus.png" alt="확대"></span>  
+          <span onclick="zoomOut()"><img src="https://t1.daumcdn.net/localimg/localimages/07/mapapidoc/ico_minus.png" alt="축소"></span>
+      </div>
+  </div>
+  <script type="text/javascript" src="//dapi.kakao.com/v2/maps/sdk.js?appkey=840029f076ed419d150b9eae97a4d6d2"></script>
+  <script>
+  var mapContainer = document.getElementById('map'), // 지도를 표시할 div 
+      mapOption = { 
+          center: new kakao.maps.LatLng(37.713328, 126.889966), // 지도의 중심좌표
+          level: 3 // 지도의 확대 레벨
+      };  
+  
+  var map = new kakao.maps.Map(mapContainer, mapOption); // 지도를 생성합니다
+  // 지도타입 컨트롤의 지도 또는 스카이뷰 버튼을 클릭하면 호출되어 지도타입을 바꾸는 함수입니다
+  function setMapType(maptype) { 
+      var roadmapControl = document.getElementById('btnRoadmap');
+      var skyviewControl = document.getElementById('btnSkyview'); 
+      if (maptype === 'roadmap') {
+          map.setMapTypeId(kakao.maps.MapTypeId.ROADMAP);    
+          roadmapControl.className = 'selected_btn';
+          skyviewControl.className = 'btn';
+      } else {
+          map.setMapTypeId(kakao.maps.MapTypeId.HYBRID);    
+          skyviewControl.className = 'selected_btn';
+          roadmapControl.className = 'btn';
+      }
+  }
+  
+  // 지도 확대, 축소 컨트롤에서 확대 버튼을 누르면 호출되어 지도를 확대하는 함수입니다
+  function zoomIn() {
+      map.setLevel(map.getLevel() - 1);
+  }
+  
+  // 지도 확대, 축소 컨트롤에서 축소 버튼을 누르면 호출되어 지도를 확대하는 함수입니다
+  function zoomOut() {
+      map.setLevel(map.getLevel() + 1);
+  }
+  </script>
+  <p>
+    <button onclick="hideMarkers()">마커 감추기</button>
+    <button onclick="showMarkers()">마커 보이기</button>
+  </p> 
+  <script>
+// 지도를 클릭했을때 클릭한 위치에 마커를 추가하도록 지도에 클릭이벤트를 등록합니다
+kakao.maps.event.addListener(map, 'click', function(mouseEvent) {        
+    // 클릭한 위치에 마커를 표시합니다 
+    addMarker(mouseEvent.latLng);             
+});
 
-      var map = new kakao.maps.Map(container, options);
-    </script>
+// 지도에 표시된 마커 객체를 가지고 있을 배열입니다
+var markers = [];
+
+// 마커 하나를 지도위에 표시합니다 
+addMarker(new kakao.maps.LatLng(33.450701, 126.570667));
+
+// 마커를 생성하고 지도위에 표시하는 함수입니다
+function addMarker(position) {
+    
+    // 마커를 생성합니다
+    var marker = new kakao.maps.Marker({
+        position: position
+    });
+
+    // 마커가 지도 위에 표시되도록 설정합니다
+    marker.setMap(map);
+    
+    // 생성된 마커를 배열에 추가합니다
+    markers.push(marker);
+}
+
+// 배열에 추가된 마커들을 지도에 표시하거나 삭제하는 함수입니다
+function setMarkers(map) {
+    for (var i = 0; i < markers.length; i++) {
+        markers[i].setMap(map);
+    }            
+}
+
+// "마커 보이기" 버튼을 클릭하면 호출되어 배열에 추가된 마커를 지도에 표시하는 함수입니다
+function showMarkers() {
+    setMarkers(map)    
+}
+
+// "마커 감추기" 버튼을 클릭하면 호출되어 배열에 추가된 마커를 지도에서 삭제하는 함수입니다
+function hideMarkers() {
+    setMarkers(null);    
+}
+  </script>
+  <script>
+// HTML5의 geolocation으로 사용할 수 있는지 확인합니다 
+if (navigator.geolocation) {
+    
+    // GeoLocation을 이용해서 접속 위치를 얻어옵니다
+    navigator.geolocation.getCurrentPosition(function(position) {
+        
+        var lat = position.coords.latitude, // 위도
+            lon = position.coords.longitude; // 경도
+        
+        var locPosition = new kakao.maps.LatLng(lat, lon), // 마커가 표시될 위치를 geolocation으로 얻어온 좌표로 생성합니다
+            message = '<div style="padding:5px;">현위치</div>'; // 인포윈도우에 표시될 내용입니다
+        
+        // 마커와 인포윈도우를 표시합니다
+        displayMarker(locPosition, message);
+            
+      });
+    
+} else { // HTML5의 GeoLocation을 사용할 수 없을때 마커 표시 위치와 인포윈도우 내용을 설정합니다
+    
+    var locPosition = new kakao.maps.LatLng(33.450701, 126.570667),    
+        message = 'geolocation을 사용할수 없습니다'
+        
+    displayMarker(locPosition, message);
+}
+
+// 지도에 마커와 인포윈도우를 표시하는 함수입니다
+function displayMarker(locPosition, message) {
+
+    // 마커를 생성합니다
+    var marker = new kakao.maps.Marker({  
+        map: map, 
+        position: locPosition
+    }); 
+    
+    var iwContent = message, // 인포윈도우에 표시할 내용
+        iwRemoveable = true;
+
+    // 인포윈도우를 생성합니다
+    var infowindow = new kakao.maps.InfoWindow({
+        content : iwContent,
+        removable : iwRemoveable
+    });
+    
+    // 인포윈도우를 마커위에 표시합니다 
+    infowindow.open(map, marker);
+    
+    // 지도 중심좌표를 접속위치로 변경합니다
+    map.setCenter(locPosition);      
+}    
+  </script>
+  <script>
+    var startSrc = 'https://t1.daumcdn.net/localimg/localimages/07/mapapidoc/red_b.png', // 출발 마커이미지의 주소입니다    
+    startSize = new kakao.maps.Size(50, 45), // 출발 마커이미지의 크기입니다 
+    startOption = { 
+        offset: new kakao.maps.Point(15, 43) // 출발 마커이미지에서 마커의 좌표에 일치시킬 좌표를 설정합니다 (기본값은 이미지의 가운데 아래입니다)
+    };
+
+// 출발 마커 이미지를 생성합니다
+var startImage = new kakao.maps.MarkerImage(startSrc, startSize, startOption);
+
+var startDragSrc = 'https://t1.daumcdn.net/localimg/localimages/07/mapapidoc/red_drag.png', // 출발 마커의 드래그 이미지 주소입니다    
+    startDragSize = new kakao.maps.Size(50, 64), // 출발 마커의 드래그 이미지 크기입니다 
+    startDragOption = { 
+        offset: new kakao.maps.Point(15, 54) // 출발 마커의 드래그 이미지에서 마커의 좌표에 일치시킬 좌표를 설정합니다 (기본값은 이미지의 가운데 아래입니다)
+    };
+
+// 출발 마커의 드래그 이미지를 생성합니다
+var startDragImage = new kakao.maps.MarkerImage(startDragSrc, startDragSize, startDragOption);
+
+// 출발 마커가 표시될 위치입니다 
+var startPosition = new kakao.maps.LatLng(33.450701, 126.570667); 
+
+// 출발 마커를 생성합니다
+var startMarker = new kakao.maps.Marker({
+    map: map, // 출발 마커가 지도 위에 표시되도록 설정합니다
+    position: startPosition,
+    draggable: true, // 출발 마커가 드래그 가능하도록 설정합니다
+    image: startImage // 출발 마커이미지를 설정합니다
+});
+
+// 출발 마커에 dragstart 이벤트를 등록합니다
+kakao.maps.event.addListener(startMarker, 'dragstart', function() {
+    // 출발 마커의 드래그가 시작될 때 마커 이미지를 변경합니다
+    startMarker.setImage(startDragImage);
+});
+
+// 출발 마커에 dragend 이벤트를 등록합니다
+kakao.maps.event.addListener(startMarker, 'dragend', function() {
+     // 출발 마커의 드래그가 종료될 때 마커 이미지를 원래 이미지로 변경합니다
+    startMarker.setImage(startImage);
+});
+
+var arriveSrc = 'https://t1.daumcdn.net/localimg/localimages/07/mapapidoc/blue_b.png', // 도착 마커이미지 주소입니다    
+arriveSize = new kakao.maps.Size(50, 45), // 도착 마커이미지의 크기입니다 
+arriveOption = { 
+    offset: new kakao.maps.Point(15, 43) // 도착 마커이미지에서 마커의 좌표에 일치시킬 좌표를 설정합니다 (기본값은 이미지의 가운데 아래입니다)
+};
+
+// 도착 마커 이미지를 생성합니다
+var arriveImage = new kakao.maps.MarkerImage(arriveSrc, arriveSize, arriveOption);
+
+var arriveDragSrc = 'https://t1.daumcdn.net/localimg/localimages/07/mapapidoc/blue_drag.png', // 도착 마커의 드래그 이미지 주소입니다    
+    arriveDragSize = new kakao.maps.Size(50, 64), // 도착 마커의 드래그 이미지 크기입니다 
+    arriveDragOption = { 
+        offset: new kakao.maps.Point(15, 54) // 도착 마커의 드래그 이미지에서 마커의 좌표에 일치시킬 좌표를 설정합니다 (기본값은 이미지의 가운데 아래입니다)
+    };
+ 
+// 도착 마커의 드래그 이미지를 생성합니다
+var arriveDragImage = new kakao.maps.MarkerImage(arriveDragSrc, arriveDragSize, arriveDragOption);
+
+// 도착 마커가 표시될 위치입니다 
+var arrivePosition = new kakao.maps.LatLng(33.450701, 126.572667);    
+ 
+// 도착 마커를 생성합니다 
+var arriveMarker = new kakao.maps.Marker({  
+    map: map, // 도착 마커가 지도 위에 표시되도록 설정합니다
+    position: arrivePosition,
+    draggable: true, // 도착 마커가 드래그 가능하도록 설정합니다
+    image: arriveImage // 도착 마커이미지를 설정합니다
+});
+
+// 도착 마커에 dragstart 이벤트를 등록합니다
+kakao.maps.event.addListener(arriveMarker, 'dragstart', function() {
+    // 도착 마커의 드래그가 시작될 때 마커 이미지를 변경합니다
+    arriveMarker.setImage(arriveDragImage);
+});
+
+// 도착 마커에 dragend 이벤트를 등록합니다
+kakao.maps.event.addListener(arriveMarker, 'dragend', function() {
+     // 도착 마커의 드래그가 종료될 때 마커 이미지를 원래 이미지로 변경합니다
+    arriveMarker.setImage(arriveImage);  
+});
+  </script>
+  
   </fieldset>
 </body>
 </html>
